@@ -3,82 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Palicho Castro - Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Palicho Castro - Presentación</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Palicho Castro</div>
-            <ul>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
+    <section id="hero">
+        <div class="hero-text">
             <h1>Hola, soy Palicho Castro</h1>
-            <p>Desarrollador Full Stack | Experto en Tecnología</p>
-            <a href="#contact" class="btn">Conéctate conmigo</a>
+            <p>Desarrollador y Entusiasta Tecnológico</p>
+            <a href="#contact" class="btn">Conóceme más</a>
         </div>
     </section>
 
     <section id="about">
         <h2>Sobre mí</h2>
-        <p>Soy un desarrollador full stack con pasión por la creación de soluciones tecnológicas eficientes. Tengo experiencia en la implementación de sistemas y en el análisis de grandes volúmenes de datos. Me encanta trabajar en proyectos innovadores que impacten positivamente en el mundo.</p>
+        <p>Soy un profesional apasionado por la tecnología, con experiencia en desarrollo de software y análisis de datos. Me encanta resolver problemas complejos mediante soluciones tecnológicas innovadoras.</p>
     </section>
 
     <section id="skills">
         <h2>Habilidades</h2>
-        <div class="skills-grid">
+        <div class="skills-container">
             <div class="skill">
                 <h3>Desarrollo Web</h3>
                 <p>HTML, CSS, JavaScript, React</p>
             </div>
             <div class="skill">
-                <h3>Backend</h3>
-                <p>Node.js, Python, SQL</p>
+                <h3>Data Science</h3>
+                <p>Python, R, SQL, Machine Learning</p>
             </div>
             <div class="skill">
-                <h3>Análisis de Datos</h3>
-                <p>Estadísticas avanzadas, IA, Machine Learning</p>
+                <h3>DevOps</h3>
+                <p>Docker, Kubernetes, AWS</p>
             </div>
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portafolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Proyecto 2">
-                <h3>Proyecto 2</h3>
-            </div>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto 1.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto 2.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto 3.</p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contacto</h2>
-        <p>¿Quieres trabajar conmigo? Envíame un mensaje.</p>
-        <form action="" id="contact-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
+        <form action="#">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Palicho Castro. Todos los derechos reservados.</p>
+        <p>© 2024 Palicho Castro - Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
