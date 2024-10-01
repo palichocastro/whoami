@@ -1,5 +1,7 @@
-// Placeholder para alguna futura funcionalidad interactiva.
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Gracias por tu mensaje, me pondré en contacto contigo pronto.");
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
 });
