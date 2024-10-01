@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Palicho Castro - Portafolio</title>
+    <title>Palicho Castro - Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Palicho Castro</div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Hola, soy Palicho Castro</h1>
-        <p>Desarrollador y entusiasta de la tecnología</p>
-        <a href="#projects" class="cta-button">Ver proyectos</a>
+        <div class="hero-content">
+            <h1>Hola, soy Palicho Castro</h1>
+            <p>Desarrollador Full Stack | Experto en Tecnología</p>
+            <a href="#contact" class="btn">Conéctate conmigo</a>
+        </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about">
         <h2>Sobre mí</h2>
-        <p>Soy un desarrollador apasionado con experiencia en diversas tecnologías. Me encanta crear soluciones innovadoras que impacten de manera positiva. Siempre estoy buscando nuevos desafíos y oportunidades para aprender.</p>
+        <p>Soy un desarrollador full stack con pasión por la creación de soluciones tecnológicas eficientes. Tengo experiencia en la implementación de sistemas y en el análisis de grandes volúmenes de datos. Me encanta trabajar en proyectos innovadores que impacten positivamente en el mundo.</p>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Proyectos Destacados</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>Desarrollo Web</h3>
+                <p>HTML, CSS, JavaScript, React</p>
             </div>
-            <div class="project-item">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
+            <div class="skill">
+                <h3>Backend</h3>
+                <p>Node.js, Python, SQL</p>
             </div>
-            <div class="project-item">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto 3.</p>
+            <div class="skill">
+                <h3>Análisis de Datos</h3>
+                <p>Estadísticas avanzadas, IA, Machine Learning</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="portfolio">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
         <h2>Contacto</h2>
-        <p>¿Interesado en colaborar? ¡Envíame un mensaje!</p>
-        <a href="mailto:palicho.castro@email.com" class="cta-button">Contáctame</a>
+        <p>¿Quieres trabajar conmigo? Envíame un mensaje.</p>
+        <form action="" id="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2024 Palicho Castro. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Palicho Castro. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
