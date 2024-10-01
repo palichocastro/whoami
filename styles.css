@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -13,123 +13,78 @@ body {
 
 header {
     background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-nav {
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.nav-links {
+    justify-content: center;
     list-style: none;
-    display: flex;
 }
 
-.nav-links li {
-    margin-left: 20px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.nav-links a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ffa500;
+    font-size: 1.2em;
 }
 
 .hero {
-    text-align: center;
-    background-color: #333;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 100px 20px;
+}
+
+.hero-content {
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #ffa500;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ff8c00;
-}
-
-.about, .projects, .contact {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about p, .contact p {
-    font-size: 1.1rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.project-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    width: calc(33% - 40px);
-    text-align: center;
-}
-
-.project-item h3 {
-    font-size: 1.5rem;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.btn {
+    background-color: #f04e23;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-footer p {
-    font-size: 0.9rem;
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills .skills-grid, #portfolio .portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill, .portfolio-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
